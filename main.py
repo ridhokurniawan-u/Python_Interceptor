@@ -21,7 +21,7 @@ async def intercept(request: Request, full_path: str):
     print("==== CLIENT REQUEST ====")
     print("Headers:", dict(request.headers))
     print("Body:", body.decode("utf-8") if body else "No body")
-    print("==== DASHBOARD RESPONSE ====")
+    print("==== SERVER RESPONSE ====")
     print("Status Code:", response.status_code)
     print("Response Headers:", dict(response.headers))
     print("Response Body:", response.text)
